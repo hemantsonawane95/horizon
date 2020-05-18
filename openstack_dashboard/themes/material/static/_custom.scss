@@ -1,0 +1,201 @@
+.btn-default:hover{
+background: #60BB46
+}
+.btn-danger{
+background: #39892f
+}
+.btn-primary{
+background: #39892f;
+&:hover{
+background: #60BB46;
+}
+&:active{
+background: #2093f5;
+}
+}
+
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+    background: #60BB46;
+    cursor: pointer;
+}
+
+.login form .panel-default > .panel-heading {
+    background: #ECF0F1;
+}
+
+h4.panel-title{
+    color: white
+}
+.panel, .help-panel > .well {
+    border: 20px #39892f;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+   
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #60BB46;
+    color: white;
+}
+
+.dropdown-menu > li > a:focus {
+    background-color: #60BB46;
+}
+
+.panel-default > .panel-heading {background: #39892f;}
+
+.login .login-title {
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+.login .splash-logo {
+    float:none;
+}
+
+.navbar-inverse{
+background: #ECF0F1;
+}
+
+.navbar-inverse .navbar-nav > .open > a:focus {
+      background-color: #39892F;
+      color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #39892F;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #39892F;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #39892F;
+}
+
+.dropdown:hover .fa-circle {
+    color: white;
+}
+
+#sidebar .openstack-toggle{
+    display:unset
+}
+
+.alert-info {
+    background-color: #39892F;
+}
+
+
+#sidebar .openstack-dashboard > a:focus, #sidebar .openstack-panel > a:focus, #sidebar .nav-header > a:focus {
+    background-color: #60BB46;
+    outline: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-inverse .md-hamburger-layer:hover {
+    background: #39892F;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #39892F;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+#sidebar{
+    overflow-x: auto;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+strong.ng-binding {
+    float: none;
+}
+
+strong {
+    float: none;
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+.login{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 128px;
+}
+.login .row{
+width: 100%;
+}
+.login form{
+z-index: 1;
+position: relative;
+}
+
+#hex-absolute-container{
+position: fixed;
+z-index:0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.page-breadcrumb{
+    display: flex;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 23px 0;
+}
+
+.breadcrumb__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right
+}
+
+.breadcrumb__copyright b{
+    margin-top: 5px;
+}
+
+.breadcrumb__copyright img {
+    vertical-align: middle;
+    float: right;
+    width: 62px;
+    height: auto;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+
+.page-breadcrumb .breadcrumb{
+    flex-grow: 1;
+    margin: 0;
+}
+
+.breadcrumb__copyright{
+
+}
+
+@media (min-width: 768px){
+.login {
+margin-top: 50px;
+}
+}
+ 

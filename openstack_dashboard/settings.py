@@ -261,12 +261,18 @@ DEFAULT_EXCEPTION_REPORTER_FILTER = 'horizon.exceptions.HorizonReporterFilter'
 POLICY_FILES_PATH = os.path.join(ROOT_PATH, "conf")
 # Map of local copy of service policy files
 POLICY_FILES = {
+    'orchestration': 'heat_policy.json',
     'identity': 'keystone_policy.json',
     'compute': 'nova_policy.json',
     'volume': 'cinder_policy.json',
     'image': 'glance_policy.json',
     'network': 'neutron_policy.json',
 }
+
+OPENSTACK_HEAT_STACK = {
+    'enable_user_pass': True,
+}
+
 # Services for which horizon has extra policies are defined
 # in POLICY_DIRS by default.
 POLICY_DIRS = {
@@ -313,11 +319,12 @@ USER_MENU_LINKS = [
 
 # 'key', 'label', 'path'
 AVAILABLE_THEMES = [
+#    (
+#        'default',
+#        pgettext_lazy('Default style theme', 'Default'),
+#        'themes/default'
+#    ), 
     (
-        'default',
-        pgettext_lazy('Default style theme', 'Default'),
-        'themes/default'
-    ), (
         'material',
         pgettext_lazy("Google's Material Design style theme", "Material"),
         'themes/material'
