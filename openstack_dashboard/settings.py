@@ -259,6 +259,20 @@ else:
         ADD_TEMPLATE_LOADERS
     )
 
+
+POLICY_FILES = {
+    'orchestration': 'heat_policy.json',
+    'identity': 'keystone_policy.json',
+    'compute': 'nova_policy.json',
+    'volume': 'cinder_policy.json',
+    'image': 'glance_policy.json',
+    'network': 'neutron_policy.json',
+}
+
+OPENSTACK_HEAT_STACK = {
+    'enable_user_pass': True,
+}
+
 # allow to drop settings snippets into a local_settings_dir
 LOCAL_SETTINGS_DIR_PATH = os.path.join(ROOT_PATH, "local", "local_settings.d")
 if os.path.exists(LOCAL_SETTINGS_DIR_PATH):
