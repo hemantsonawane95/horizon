@@ -62,8 +62,7 @@
     }
 
     .md-hamburger-layer {
-      // background: $navbar-default-link-color;
-      background: #39892F;
+        background: #39892F;
 
       &:hover {
         background: $navbar-default-link-hover-color;
@@ -79,12 +78,10 @@
     }
 
     .md-hamburger-layer {
-      // background: $navbar-inverse-link-color;
-      background: #39892F; 
+       background: #39892F; 
 
       &:hover {
-        // background: $navbar-inverse-link-hover-color;
-        background: #39892F;
+         background: #39892F;
       }
     }
 

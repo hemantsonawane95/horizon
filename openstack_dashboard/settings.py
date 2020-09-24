@@ -258,8 +258,7 @@ else:
         [('django.template.loaders.cached.Loader', CACHED_TEMPLATE_LOADERS)] +
         ADD_TEMPLATE_LOADERS
     )
-
-
+    
 POLICY_FILES = {
     'orchestration': 'heat_policy.json',
     'identity': 'keystone_policy.json',
@@ -318,6 +317,19 @@ if STATIC_ROOT is None:
 
 if STATIC_URL is None:
     STATIC_URL = WEBROOT + 'static/'
+
+AVAILABLE_THEMES = [
+#    (
+#        'default',
+#        pgettext_lazy('Default style theme', 'Default'),
+#        'themes/default'
+#    ), 
+    (
+        'material',
+        pgettext_lazy("Google's Material Design style theme", "Material"),
+        'themes/material'
+    ),
+]
 
 AVAILABLE_THEMES, SELECTABLE_THEMES, DEFAULT_THEME = (
     theme_settings.get_available_themes(
