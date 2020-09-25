@@ -148,7 +148,6 @@ strong {
     content: "\F1DA";
 }
 
-
 .fa-calendar:before {
     content: "\F0ED";
 }
@@ -176,6 +175,7 @@ strong {
 .fa-caret-down:before {
     content: "\F35D";
 }
+
 
 .mdi-lock-open-outline:before {
     content: "\F340";
@@ -271,7 +271,7 @@ strong {
 }
 
 .themable-spinner .input-group-btn-vertical .hz-spinner-icon-up:before {
-    content: "\F453";
+    content: "\F415";
 }
 
 .themable-spinner .input-group-btn-vertical .hz-spinner-icon-down:before {
@@ -364,6 +364,10 @@ html, body {
 
 .fa-caret-down:before {
     content: "\F35D";
+}
+ 
+.tablesorter-headerAsc .table-sort-indicator:before{
+    content: "\F360";
 }
 
 .login{
