@@ -334,7 +334,8 @@ def get_url_for_service(service, region, endpoint_type):
                 interface = \
                     ENDPOINT_TYPE_TO_INTERFACE.get(endpoint_type, '')
                 if endpoint.get('interface') == interface:
-                    return endpoint.get('url')
+                  base_url = endpoint.get('url').replace('http://10.12.0.51','https://cloud.tcpro.cz') if endpoint_type == "publicURL" else endpoint.get('url')
+                  return base_url
         except (IndexError, KeyError):
             # it could be that the current endpoint just doesn't match the
             # type, continue trying the next one
